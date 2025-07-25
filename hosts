@@ -1,5 +1,7 @@
 # This is the default ansible 'hosts' file.
 #
+[ops445]
+myvm ansible_host=myvmlab.senecapolytechnic.ca ansible_port=7455
 # It should live in /etc/ansible/hosts
 #
 #   - Comments begin with the '#' character
@@ -42,6 +44,3 @@
 
 ## db-[99:101]-node.example.com
 
-[ops435b]
-jkwok	ansible_host=myvmlab.senecapolytechnic.ca ansible_port=7850
-cdee	ansible_host=myvmlab.senecapolytechnic.ca ansible_port=7874
