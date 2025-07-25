@@ -1,0 +1,37 @@
+
+PLAY [Configure OPS445 Lab VM] *************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [myvm]
+
+TASK [Ensure Apache is updated] ************************************************
+changed: [myvm]
+
+TASK [Ensure EPEL repo is installed] *******************************************
+ok: [myvm]
+
+TASK [Remove the 'tree' package] ***********************************************
+ok: [myvm]
+
+TASK [Set hostname to Seneca ID] ***********************************************
+changed: [myvm]
+
+TASK [Create user with sudo access] ********************************************
+changed: [myvm]
+
+TASK [Add SSH key for new user] ************************************************
+changed: [myvm]
+
+TASK [Create lab directories] **************************************************
+changed: [myvm] => (item=lab1)
+changed: [myvm] => (item=lab2)
+changed: [myvm] => (item=lab3)
+changed: [myvm] => (item=lab4)
+changed: [myvm] => (item=lab5)
+changed: [myvm] => (item=lab6)
+changed: [myvm] => (item=lab7)
+changed: [myvm] => (item=lab8)
+
+PLAY RECAP *********************************************************************
+myvm                       : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
